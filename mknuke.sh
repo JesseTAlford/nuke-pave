@@ -1,6 +1,7 @@
 #!/bin/bash
-# set -e
+set -e
 
 go build
 cf uninstall-plugin Nuke-and-Pave
 cf install-plugin nuke-pave
+cf nuke-pave
