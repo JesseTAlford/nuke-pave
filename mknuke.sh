@@ -1,6 +1,6 @@
 #!/bin/bash
 # set -e
 
-go build main.go
+go build
 cf uninstall-plugin Nuke-and-Pave
 cf install-plugin nuke-pave
